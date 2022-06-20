@@ -52,7 +52,6 @@ dependencies:
       - "bitnami-common"
     version: "1.x.x"
 description: "Nautobot is a Network Source of Truth and Network Automation Platform."
-engine: "gotpl"
 home: "https://github.com/nautobot/nautobot"
 icon: "https://raw.githubusercontent.com/nautobot/helm-charts/main/images/NautobotLogoSquare.png"
 keywords:
