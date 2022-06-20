@@ -360,7 +360,7 @@
     }
   },
   "type": "object",
-  "additionalProperties": false,
+  "additionalProperties": true,
   "required": [
     "celeryBeat",
     "celeryWorker",

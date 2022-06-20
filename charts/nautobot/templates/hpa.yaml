@@ -1,6 +1,6 @@
 {{- if .Values.nautobot.autoscaling.enabled }}
 ---
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: {{ include "common.names.fullname" . }}
@@ -23,7 +23,7 @@ spec:
 {{- end }}
 {{- if .Values.celeryWorker.autoscaling.enabled }}
 ---
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: {{ include "common.names.fullname" . }}-celery-worker
@@ -46,7 +46,7 @@ spec:
 {{- end }}
 {{- if and .Values.rqWorker.enabled .Values.rqWorker.autoscaling.enabled }}
 ---
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: {{ include "common.names.fullname" . }}-rq-worker
